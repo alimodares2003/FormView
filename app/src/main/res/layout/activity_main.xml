@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ir.adp.widgets.FormView xmlns:android="http://schemas.android.com/apk/res/android"
+<ir.adp.formviewlibrary.FormView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/fv"
     style="@style/FormView">
@@ -104,4 +104,4 @@
 
     </android.support.design.card.MaterialCardView>
 
-</ir.adp.widgets.FormView>
+</ir.adp.formviewlibrary.FormView>
