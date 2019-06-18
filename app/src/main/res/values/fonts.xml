@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="regularEn">fonts/OpenSans.ttf</string>
+    <string name="font_mainRegular" translatable="false">fonts/IRANSansMobile-Regular.ttf</string>
+    <string name="font_mainBold" translatable="false">fonts/IRANSansMobile-Bold.ttf</string>
+    <string name="font_mainBlack" translatable="false">fonts/IRANSansMobile-Black.ttf</string>
+    <string name="font_mainLight" translatable="false">fonts/IRANSansMobile-Light.ttf</string>
+    <string name="font_mainMedium" translatable="false">fonts/IRANSansMobile-Medium.ttf</string>
+    <string name="font_mainThin" translatable="false">fonts/IRANSansMobile-Thin.ttf</string>
+
+</resources>

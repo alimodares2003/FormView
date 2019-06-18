@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ir.adp.widgets.FormView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fv"
+    style="@style/FormView">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#fff"
+        android:tag="optional"
+        android:elevation="4dp" />
+
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.CardView"
+        android:padding="8dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ir.adp.widgets.EditText
+                android:id="@+id/et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="first name"
+                android:layout_margin="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" />
+
+            <ir.adp.widgets.EditText
+                android:id="@+id/et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="last name"
+                android:layout_margin="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ir.adp.widgets.EditText
+                    android:id="@+id/et2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="optional"
+                    android:tag="optional"
+                    android:layout_margin="8dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" />
+
+                <ir.adp.widgets.EditText
+                    android:id="@+id/et3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="mobile"
+                    android:gravity="start"
+                    android:textAlignment="textStart"
+                    android:textDirection="rtl"
+                    android:layout_margin="8dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ir.adp.widgets.Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="send"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="8dp"
+                    app:backgroundTint="@color/colorPrimary"
+                    style="@style/Widget.MaterialComponents.Button" />
+
+                <ir.adp.widgets.Button
+                    android:id="@+id/submit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cancel"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    app:backgroundTint="@color/colorAccent"
+                    style="@style/Widget.MaterialComponents.Button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.design.card.MaterialCardView>
+
+</ir.adp.widgets.FormView>
