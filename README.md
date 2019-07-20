@@ -13,7 +13,7 @@ implementation 'com.github.alimodares2003:FormView:1.0'
 
 1.add FromView to root layout. also you can add anywhere. 
 
-```kotlin
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ir.adp.library.FormView
         xmlns:android="http://schemas.android.com/apk/res/android"
