@@ -1,20 +1,20 @@
-apply plugin: 'com.novoda.bintray-release'
+//apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
 
-def library_groupId = 'com.sam'
-def library_artifactId = 'formview'
-def library_versionCode = 1
-def library_versionName = '1.0.0'
-
-publish {
-    userOrg = 'samco'
-    repoName = 'FormView'
-    groupId = library_groupId
-    artifactId = library_artifactId
-    publishVersion = library_versionName
-    desc = 'FormView'
-    website = 'https://github.com/alimodares2003/FormView.git'
-}
+//def library_groupId = 'com.sam'
+//def library_artifactId = 'formview'
+//def library_versionCode = 1
+//def library_versionName = '1.0.0'
+//
+//publish {
+//    userOrg = 'samco'
+//    repoName = 'FormView'
+//    groupId = library_groupId
+//    artifactId = library_artifactId
+//    publishVersion = library_versionName
+//    desc = 'FormView'
+//    website = 'https://github.com/alimodares2003/FormView.git'
+//}
 
 android {
     compileSdkVersion 28
@@ -41,11 +41,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:design:28.0.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
