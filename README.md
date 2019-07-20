@@ -7,7 +7,7 @@ for check required text in EditText
 ```
 maven { url 'https://jitpack.io' }
 
-implementation 'com.github.alimodares2003:FormView:1.0'
+implementation 'com.github.alimodares2003:FormView:1.0.0'
 ```
 # How to use
 
