@@ -1,9 +1,23 @@
+apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
+
+def library_groupId = 'com.sam'
+def library_artifactId = 'formview'
+def library_versionCode = 1
+def library_versionName = '1.0.0'
+
+publish {
+    userOrg = 'samco'
+    repoName = 'FormView'
+    groupId = library_groupId
+    artifactId = library_artifactId
+    publishVersion = library_versionName
+    desc = 'FormView'
+    website = 'https://github.com/alimodares2003/FormView.git'
+}
 
 android {
     compileSdkVersion 28
-
-
     defaultConfig {
         minSdkVersion 17
         targetSdkVersion 28
@@ -18,6 +32,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    lintOptions {
+        abortOnError false
     }
 
 }

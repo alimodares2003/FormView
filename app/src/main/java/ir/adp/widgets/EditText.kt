@@ -5,7 +5,6 @@ import android.graphics.Typeface
 import android.support.design.widget.TextInputEditText
 import android.support.design.widget.TextInputLayout
 import android.util.AttributeSet
-import android.view.Gravity
 import ir.adp.formview.R
 
 
@@ -43,28 +42,5 @@ class EditText : TextInputLayout {
 
     fun setText(text: String) {
         editText.setText(text)
-    }
-
-    override fun setErrorEnabled(enabled: Boolean) {
-        super.setErrorEnabled(enabled)
-
-        if (!enabled) {
-            return
-        }
-
-        try {
-            val errorViewField = TextInputLayout::class.java.getDeclaredField("mErrorView")
-            errorViewField.isAccessible = true
-            val errorView = errorViewField.get(this) as TextView
-            if (errorView != null) {
-                errorView.gravity = Gravity.RIGHT
-                val params = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT)
-                params.gravity = Gravity.END
-                errorView.layoutParams = params
-            }
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
-
     }
 }

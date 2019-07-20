@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ir.adp.formviewlibrary.FormView xmlns:android="http://schemas.android.com/apk/res/android"
+<ir.adp.widgets.FormView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/fv"
     style="@style/FormView">
@@ -10,7 +10,6 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         app:titleTextColor="#fff"
-        android:tag="optional"
         android:elevation="4dp" />
 
     <android.support.design.card.MaterialCardView
@@ -104,4 +103,4 @@
 
     </android.support.design.card.MaterialCardView>
 
-</ir.adp.formviewlibrary.FormView>
+</ir.adp.widgets.FormView>
