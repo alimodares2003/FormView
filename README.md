@@ -41,25 +41,25 @@ implementation 'com.github.alimodares2003:FormView:1.0.3'
 2. for button click hundle:
 
 ```kotlin
-      fv.setOnSubmitClickListener {
-          val et = et.getText()
-          val et1 = et1.getText()
-          val et2 = et2.getText()
-          val et3 = et3.getText()
-          Toast.makeText(this, "$et $et1 $et2 $et3", Toast.LENGTH_LONG).show()
-          //your code
-     }
+fv.setOnSubmitClickListener {
+  val et = et.getText()
+  val et1 = et1.getText()
+  val et2 = et2.getText()
+  val et3 = et3.getText()
+  Toast.makeText(this, "$et $et1 $et2 $et3", Toast.LENGTH_LONG).show()
+  //your code
+}
  ```
 3.for add submit to toolbar item :
 
 ```kotlin
-   override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.item_menu, menu)
-        fv.onNavigationItemSelected(menu){
-            Toast.makeText(this, "clicked", Toast.LENGTH_LONG).show()
-        }
-        return true
-    }
+override fun onCreateOptionsMenu(menu: Menu): Boolean {
+     menuInflater.inflate(R.menu.item_menu, menu)
+     fv.onNavigationItemSelected(menu){
+        Toast.makeText(this, "clicked", Toast.LENGTH_LONG).show()
+     }
+     return true
+}
 ```
 
 4.for change error text:
