@@ -18,7 +18,7 @@ allprojects {
 }
 
 //add this to your dependencies
-implementation 'com.github.alimodares2003:FormView:1.0.1'
+implementation 'com.github.alimodares2003:FormView:1.0.3'
 ```
 # How to use
 
