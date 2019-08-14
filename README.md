@@ -4,6 +4,8 @@ for check required text in EditText
 ![](mygif.gif)
 
 # Updates
+version 1.0.3
+
  1.set reset form to optional
  
  2.for reset form ```fv.resetForm()```
