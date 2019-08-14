@@ -3,6 +3,9 @@ for check required text in EditText
 
 ![](mygif.gif)
 
+# Updates
+ set reset form to optional with ```resetForm()```
+
 # Installation
 ```gradle
 allprojects {
