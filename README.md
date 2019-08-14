@@ -4,10 +4,16 @@ for check required text in EditText
 ![](mygif.gif)
 
 # Installation
-```
-maven { url 'https://jitpack.io' }
+```gradle
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
 
-implementation 'com.github.alimodares2003:FormView:1.0.0'
+//add this to your dependencies
+implementation 'com.github.alimodares2003:FormView:1.0.1'
 ```
 # How to use
 
@@ -29,13 +35,13 @@ implementation 'com.github.alimodares2003:FormView:1.0.0'
 
 ```kotlin
       fv.setOnSubmitClickListener {
-            val et = et.getText()
-            val et1 = et1.getText()
-            val et2 = et2.getText()
-            val et3 = et3.getText()
-            Toast.makeText(this, "$et $et1 $et2 $et3", Toast.LENGTH_LONG).show()
-            //your code
-            }
+          val et = et.getText()
+          val et1 = et1.getText()
+          val et2 = et2.getText()
+          val et3 = et3.getText()
+          Toast.makeText(this, "$et $et1 $et2 $et3", Toast.LENGTH_LONG).show()
+          //your code
+     }
  ```
 3.for add submit to toolbar item :
 
