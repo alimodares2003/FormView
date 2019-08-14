@@ -61,14 +61,13 @@ class FormView : LinearLayout {
                     }
                     if (noError) {
                         listener()
-                        resetForm()
                     }
                 }
             }
         }
     }
 
-    private fun resetForm() {
+    fun resetForm() {
         etList.forEach {
             it.editText?.setText("")
             it.isErrorEnabled = false
@@ -129,7 +128,6 @@ class FormView : LinearLayout {
             }
             if (noError) {
                 listener()
-                resetForm()
             }
             return@setOnMenuItemClickListener true
         }
