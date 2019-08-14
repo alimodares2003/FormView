@@ -4,9 +4,9 @@ for check required text in EditText
 ![](mygif.gif)
 
 # Updates
- set reset form to optional.
- for reset form:  
- ```fv.resetForm()```
+ 1.set reset form to optional
+ 
+ 2.for reset form ```fv.resetForm()```
 
 # Installation
 ```gradle
